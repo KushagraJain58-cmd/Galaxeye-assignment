@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
-const mongoURI = `mongodb://mongodb:27017/galaxyeye`
-// const mongoURI = `mongodb://localhost:27017/galaxyeye`
+// const mongoURI = `mongodb://mongodb:27017/galaxyeye`
+const mongoURI = `mongodb://localhost:27017/galaxyeye`
 
 const connectDB = async () => {
 	try {
