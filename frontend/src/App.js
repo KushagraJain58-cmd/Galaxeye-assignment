@@ -13,7 +13,7 @@ export default function App() {
     const layer = e.layer;
     const aoi = layer.toGeoJSON().geometry;
 
-    console.log("AOI is:",aoi)
+    // console.log("AOI is:",aoi)
     const response = await fetch('http://localhost:3500/api/tiles', {
       method: 'POST',
       headers: {
@@ -22,16 +22,16 @@ export default function App() {
       body: JSON.stringify({ aoi })
     });
     const data = await response.json();
-    console.log("Tile:", data);
+    // console.log("Tile:", data);
     const polygons = data.flatMap(item => 
     item.features.map(feature => ({
       positions: feature.geometry.coordinates[0],
       key: feature._id
     }))
     );
-    console.log("Polygons",polygons)
+    // console.log("Polygons",polygons)
      setTiles(polygons);
-    // Display intersecting tiles on the map
+
   };
 
   return (
@@ -44,14 +44,13 @@ export default function App() {
           draw={{
             rectangle: true,
             polygon: true,
-            circle: false,
+            circle: true,
             polyline: false,
             circlemarker: false,
             marker: false
           }}
         />
       </FeatureGroup>
-      {tiles.length!==0 && console.log("Tiles State:",tiles)};
       {tiles.length!==0 && tiles.map((tile, index) => (
         <Polygon
           // key={index}
