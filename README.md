@@ -1,4 +1,4 @@
-# Galaxyeye-assignment
+# Galaxeye-assignment
 ## Steps need to be executed to test the code
 
 ### The normal way:
