@@ -20,7 +20,7 @@
 ### By using docker compose:
 - Install the docker in your machine
 - Change mongo_uri from mongodb://localhost:27017/galaxyeye to mongodb://mongo:27017/galaxyeye in dbConn.js
-- #### In the command prompt run
+ #### In the command prompt run
     - docker-compose up --build
 
 ## Demo video
