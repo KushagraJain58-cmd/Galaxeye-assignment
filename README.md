@@ -6,13 +6,13 @@
 - Connect to the database
 - In command prompt:<br/>
   #### In one terminal
-      - cd backend<br/>
-      - npm install<br/>
-      - npm run dev<br/>
-      - The terminal should look like:<br/>
-        Connected to MongoDB<br/>
-        Server Running on port 3500<br/>
-  -In different terminal:
+      - cd backend
+      - npm install
+      - npm run dev
+      - The terminal should look like:
+        Connected to MongoDB
+        Server Running on port 3500
+  #### In other terminal:
       - cd frontend
       - npm install
       - npm start
