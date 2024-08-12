@@ -4,7 +4,7 @@
 ### The normal way:
 - Store the data in your local database MongoDB Compass
 - Connect to the database
-- In command promt:
+- In command prompt:<br/>
   -In one terminal
       - cd backend
       - npm install
