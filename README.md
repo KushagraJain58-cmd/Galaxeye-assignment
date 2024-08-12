@@ -5,14 +5,14 @@
 - Store the data in your local database MongoDB Compass
 - Connect to the database
 - In command promt:
-    In one terminal
+  -In one terminal
       - cd backend
       - npm install
       - npm run dev
       - The terminal should look like:
         Connected to MongoDB
         Server Running on port 3500
-     In different terminal:
+  -In different terminal:
       - cd frontend
       - npm install
       - npm start
