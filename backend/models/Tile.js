@@ -1,17 +1,3 @@
-// const mongoose = require('mongoose');
-
-// const TileSchema = new mongoose.Schema({
-//   type: { type: String },
-//   geometry: {
-//     type: { type: String },
-//     coordinates: []
-//   },
-//   properties: {}
-// });
-
-// const tiles = mongoose.models.tiles || mongoose.model('tiles', TileSchema);
-// module.exports = tiles;
-
 const mongoose = require('mongoose');
 
 const GeometrySchema = new mongoose.Schema({
