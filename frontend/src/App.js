@@ -44,7 +44,7 @@ export default function App() {
           draw={{
             rectangle: true,
             polygon: true,
-            circle: true,
+            circle: false,
             polyline: false,
             circlemarker: false,
             marker: false
